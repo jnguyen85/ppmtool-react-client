@@ -9,7 +9,7 @@ class Dashboard extends Component {
     componentDidMount() {
         this.props.getProjects()
     }
-    renderProjectsList() {
+    renderProjectsList = () => {
         return this.props.project.projects.map(project => {
            return (
                <div>
